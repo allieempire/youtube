@@ -1,6 +1,8 @@
 
 * {
 	font-size: 1em;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
 }
 
 /********************************************************
@@ -10,8 +12,8 @@
 #nav {
 	/*position: fixed;*/
 	vertical-align: middle;
-	border-bottom: 2px solid gray;
-	height: 3.4em;
+	border-bottom: 1px solid gray;
+	height: 3.2em;
 }
 
 #left-nav,
@@ -35,7 +37,7 @@
 }
 
 #logo {
-	top: -5px;
+	top: -12px;
 	left: 61px;
 }
 
@@ -44,21 +46,43 @@
 .search {
 	display: inline-block;
 	position: relative;
-	/*vertical-align: middle;*/
 	border: 1px solid green;
 }
 
 #search {
-	left: 300px;
-	top: -30px;
+	left: 232px;
+	top: -53px;
+	width: 55%;
+}
+
+#search-bar {
+	width: 86.5%;
+}
+
+#search-input {
+	width: 100%;
+	height: 1.5em;
+}
+
+#search-button {
+	position: relative;
+	left: -4px;
+	top: -1px;
+	height: 1.85em;
+	width: 4.15em;
 }
 
 /* RIGHT NAV */
 
 #upload-button {
-	right: -1000px;
+	left: 1070px;
+	top: -85px;
 }
 
 #sign-in-button {
-	right: 20px;
+	left: 1090px;
+	top: -85px;
+	/*width: 3em;*/
+	font-size: .7em;
+	font-weight: bold;
 }
