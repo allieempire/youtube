@@ -5,6 +5,7 @@
 	text-decoration: none;
 }
 
+
 /********************************************************
 		NAVIGATION
 ********************************************************/
@@ -80,9 +81,17 @@
 }
 
 #sign-in-button {
-	left: 1090px;
+	left: 1091px;
 	top: -85px;
-	/*width: 3em;*/
+	width: 5em;
+	height: 2.5em;
 	font-size: .7em;
 	font-weight: bold;
+	background-color: rgb(22,122,198);
+	border: 1px solid rgb(22,122,198);
+	border-radius: 2px;
+}
+
+#sign-in-link {
+	color: white;
 }
