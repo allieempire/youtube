@@ -3,6 +3,7 @@
 	font-size: 1em;
 	font-family: 'Roboto', sans-serif;
 	text-decoration: none;
+	max-width: 100%;
 }
 
 
@@ -11,35 +12,38 @@
 ********************************************************/
 
 #nav {
-	/*position: fixed;*/
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
 	vertical-align: middle;
-	border-bottom: 1px solid gray;
-	height: 3.2em;
-}
-
-#left-nav,
-#search,
-#right-nav {
-	vertical-align: middle;
+	border-bottom: 1px solid #e8e8e8;
+	height: 3.1em;
+	background-color: white;
 }
 
 .buttons {
 	display: inline-block;
 	position: relative;
 	vertical-align: middle;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 }
 
 /* LEFT NAV */
 
 #sidebar-extension {
-	top: 21px;
-	left: 27px;
+	top: 1em;
+	left: 2.2em;
+	opacity: 0.4;
+}
+
+#sidebar-extension:hover {
+	opacity: 0.9;
 }
 
 #logo {
-	top: -12px;
-	left: 61px;
+	top: -.8em;
+	left: 3em;
 }
 
 /* SEARCH BAR */
@@ -47,51 +51,94 @@
 .search {
 	display: inline-block;
 	position: relative;
-	border: 1px solid green;
+	/*border: 1px solid green;*/
 }
 
 #search {
-	left: 232px;
-	top: -53px;
+	left: 14.5em;
+	top: -3.15em;
 	width: 55%;
 }
 
 #search-bar {
-	width: 86.5%;
+	width: 73%;
+	border: none;
 }
 
 #search-input {
 	width: 100%;
-	height: 1.5em;
+	height: 1.6em;
+	border: 1px solid #d3d3d3;
+	border-right: none;
+}
+
+#search-input:hover,
+#search-input:focus {
+	border: 1px solid #c0c0c0;
+	box-shadow: inset 0 0 .5px rgba(0,0,0,0.2);
 }
 
 #search-button {
 	position: relative;
-	left: -4px;
-	top: -1px;
-	height: 1.85em;
+	/*top: -2px;*/
+	height: 1.9em;
 	width: 4.15em;
+	border: 1px solid #d3d3d3;
+	background: #f8f8f8f8;
+}
+
+#search-button:hover {
+	background: #f0f0f0;
 }
 
 /* RIGHT NAV */
 
 #upload-button {
-	left: 1070px;
-	top: -85px;
+	right: -80.75em;
+	top: -5em;
+	opacity: 0.6;
+}
+
+#upload-button:hover {
+	opacity: 0.8;
 }
 
 #sign-in-button {
-	left: 1091px;
-	top: -85px;
+	right: -117.5em;
+	top: -7.25em;
 	width: 5em;
 	height: 2.5em;
 	font-size: .7em;
 	font-weight: bold;
-	background-color: rgb(22,122,198);
-	border: 1px solid rgb(22,122,198);
+	background-color: #167ac6;
+	border: 1px solid #167ac6;
 	border-radius: 2px;
 }
 
-#sign-in-link {
+#sign-in-button a {
 	color: white;
+}
+
+/********************************************************
+		END NAVIGATION
+********************************************************/
+
+
+/********************************************************
+		BODY
+********************************************************/
+
+main {
+	background-color: #f0f0f0;
+	padding-top: 3.1em;
+}
+
+/* VIDEO */
+
+#video {
+	width: 853px;
+	height: 480px;
+	margin-top: .7em;
+	margin-left: 4.5em;
+	border: 1px solid red;
 }
